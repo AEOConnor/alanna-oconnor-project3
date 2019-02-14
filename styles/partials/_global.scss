@@ -1,0 +1,41 @@
+body {
+  background: black;
+}
+
+html {
+  font-size: 125%;
+  color: white;
+}
+
+.dark-theme {
+  background: black;
+}
+
+.light-theme {
+  background: white;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid white;
+}
+
+.flex-container-desktop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+
+    a {
+      flex-basis: 1 1 auto;
+    }
+}
