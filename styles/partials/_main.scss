@@ -29,15 +29,32 @@ a {
 .mobile {
   display: none;
 }
-    
+
+//colors
+
+.yellow {
+  background: yellow;
+  box-shadow: 0 0 40px 1px yellow;
+}    
+
 .red {
   background: red;
   box-shadow: 0 0 40px 1px red;
 }
 
+.orange {
+  background: darkorange;
+  box-shadow: 0 0 45px 1px darkorange;
+}
+
 .pink {
   background: deeppink;
   box-shadow: 0 0 40px 1px deeppink;
+}
+
+.purple {
+  background: mediumorchid;
+  box-shadow: 0 0 45px 1px mediumorchid;
 }
 
 .blue {
@@ -55,17 +72,7 @@ a {
   box-shadow: 0 0 40px 1px white;
 }
 
-.purple {
-  background: mediumorchid;
-  box-shadow: 0 0 45px 1px mediumorchid;
-}
 
-.yellow {
-  background: yellow;
-  box-shadow: 0 0 40px 1px yellow;
-}
 
-.orange {
-  background: darkorange;
-  box-shadow: 0 0 45px 1px darkorange;
-}
+
+
