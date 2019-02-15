@@ -7,19 +7,25 @@ html {
   color: white;
 }
 
-.dark-theme {
-  background: black;
+h1,
+a,
+p {
+  padding: 0;
+  margin: 0;
 }
 
-.light-theme {
-  background: white;
+label:hover {
+  cursor: pointer;
 }
+
+// input[type="radio"] {
+//   opacity: 
+// }
 
 .wrapper {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  border: 1px solid white;
 }
 
 .flex-container-desktop {
@@ -31,8 +37,8 @@ html {
 .flex-row {
   display: flex;
   flex-direction: row;
-
     a {
       flex-basis: 1 1 auto;
     }
 }
+
