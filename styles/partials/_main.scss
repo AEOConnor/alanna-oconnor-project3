@@ -1,9 +1,25 @@
+main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+    .aside {
+      width: calc(25% - 100px);
+      margin: 0 50px;
+    }
+    .main-grid {
+      width: calc(75% - 100px);
+      margin: 0 50px;
+    }
+}
+
 .light-container {
   border-radius: 50%;
   margin: 5px;
   padding: 5px;
   display: block;
-  z-index: 10;
+  background: #333;;
 }
 
 h1 {
@@ -18,12 +34,6 @@ h1 {
 .desktop {
   width: 25px;
   height: 25px;
-}
-
-a {
-  display: block;
-  background: #333;;
-  perspective: 1000px;
 }
     
 .mobile {

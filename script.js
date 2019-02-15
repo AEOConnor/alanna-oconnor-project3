@@ -1,5 +1,4 @@
-color = ['yellow', 'pink', 'red', 'orange', 'green', 'blue', 'white', 'purple', 'orange'];
-
+color = ['yellow', 'red', 'orange', 'pink', 'purple', 'blue', 'green', 'white'];
 
 $(function () {
 
@@ -8,9 +7,9 @@ $(function () {
     event.preventDefault();
   }); 
 
-let colorChoice;
 
-let currentColor;
+  let colorChoice;
+  let currentColor;
 
   $('input').on('change', function() {
     //save the user's color choice in a variable to be used again
@@ -18,23 +17,46 @@ let currentColor;
   })
 
  //when the user clicks on an a tag, toggle the color class that corresponds with their color choice
-    $('a').on('click', function() {
-      for (let i = 0; i <= color.length; i++)
-      
-        currentColor = color[i];
-        let lightColor = $(this).hasClass(`${currentColor}`);
-      console.log(currentColor);
-      console.log(lightColor);
+//what I want to do: on click event, store the class value of the anchor tag class into an array. for a loop on the array. Filter out for only color. Store as current color and compare it to the new user color choice. 
 
-        if (lightColor === false){
-          $(this).toggleClass(colorChoice);
-        } else if(lightColor === colorChoice){
-          $(this).toggleClass(colorChoice);
-        } else if(lightColor !== colorChoice){
-          $(this).removeClass(`${currentColor}`);
-          $(this).addClass(`${colorChoice}`);
-        }
-     });      
+    $('a').on('click', function() {
+      
+      for(let i = 0; i < color.length; i++) {
+        $(this).toggleClass(colorChoice);
+      }
+     });
+        // currentColor = color[i];
+        // newColor =  (`${colorChoice}`);
+        // console.log(currentColor);
+        // if (currentColor === false) {
+        //   $(this).addClass(colorChoice);
+        // } else if (currentColor === newColor) {
+        //   $(this).toggleClass(colorChoice);
+        // }
+      
+      // currentChoice = $(this).class('').val();
+      // $(this).toggleClass(colorChoice);
+      // console.log(currentChoice);
+      // for (let i = 0; i < color.length; i++){
+      //   if (colorChoice === color[i]) {
+          
+      //   } 
+      // }
+        
+       
+
+    $(this).removeClass(`${colorChoice}`);
+      $(this).addClass(`${colorChoice}`);
+      // console.log(currentColor);
+      // console.log(`${colorChoice}`);
+
+        // if (lightColor === true){
+        //   $(this).removeClass(colorChoice);
+        // } else if(lightColor === false){
+        //   $(this).removeClass(`${colorChoice}`);
+        //   $(this).addClass(`${colorChoice}`);
+        // }
+         
           
 
       
@@ -108,5 +130,16 @@ let currentColor;
   $('.clear-all').on('click', function () {
       $('a').removeClass(`${colorChoice}`);
     });
+
+  $("#share").jsSocials({
+    shares: ["twitter"]
+  });
+
+  $("#sharePopup").jsSocials({
+    shareIn: "popup",
+    shares: ["twitter"]
+  });
+
+
 
 });

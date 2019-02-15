@@ -161,10 +161,7 @@ html {
   flex-direction: column;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  max-width: 1400px;
-  margin: 0 auto; }
+  align-items: center; }
 
 .flex-row {
   display: -webkit-box;
@@ -178,12 +175,30 @@ html {
     -ms-flex-preferred-size: 1 1 auto;
     flex-basis: 1 1 auto; }
 
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; }
+  main .aside {
+    width: calc(25% - 100px);
+    margin: 0 50px; }
+  main .main-grid {
+    width: calc(75% - 100px);
+    margin: 0 50px; }
+
 .light-container {
   border-radius: 50%;
   margin: 5px;
   padding: 5px;
   display: block;
-  z-index: 10; }
+  background: #333; }
 
 h1 {
   text-shadow: 0 0 25px white; }
@@ -196,24 +211,33 @@ h1 {
   width: 25px;
   height: 25px; }
 
-a {
-  display: block;
-  background: #333;
-  -webkit-perspective: 1000px;
-  perspective: 1000px; }
-
 .mobile {
   display: none; }
+
+.yellow {
+  background: yellow;
+  -webkit-box-shadow: 0 0 40px 1px yellow;
+  box-shadow: 0 0 40px 1px yellow; }
 
 .red {
   background: red;
   -webkit-box-shadow: 0 0 40px 1px red;
   box-shadow: 0 0 40px 1px red; }
 
+.orange {
+  background: darkorange;
+  -webkit-box-shadow: 0 0 45px 1px darkorange;
+  box-shadow: 0 0 45px 1px darkorange; }
+
 .pink {
   background: deeppink;
   -webkit-box-shadow: 0 0 40px 1px deeppink;
   box-shadow: 0 0 40px 1px deeppink; }
+
+.purple {
+  background: mediumorchid;
+  -webkit-box-shadow: 0 0 45px 1px mediumorchid;
+  box-shadow: 0 0 45px 1px mediumorchid; }
 
 .blue {
   background: deepskyblue;
@@ -229,21 +253,6 @@ a {
   background: white;
   -webkit-box-shadow: 0 0 40px 1px white;
   box-shadow: 0 0 40px 1px white; }
-
-.purple {
-  background: mediumorchid;
-  -webkit-box-shadow: 0 0 45px 1px mediumorchid;
-  box-shadow: 0 0 45px 1px mediumorchid; }
-
-.yellow {
-  background: yellow;
-  -webkit-box-shadow: 0 0 40px 1px yellow;
-  box-shadow: 0 0 40px 1px yellow; }
-
-.orange {
-  background: darkorange;
-  -webkit-box-shadow: 0 0 45px 1px darkorange;
-  box-shadow: 0 0 45px 1px darkorange; }
 
 @media (max-width: 500px) {
   .grid-desktop,

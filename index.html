@@ -9,48 +9,47 @@
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  <header>
+  <header class="wrapper">
     <h1>Light Up Your Life</h1>
   </header>
   <main>
-    <section class="wrapper">
+    <section class="aside">
       <div class="wrapper">
         <button class="light-theme-button">Dark/Light Theme</button>
-      <button class="clear-all">Clear all</button>
-      <button class="flash-light">Flash All of the Lights</button>
+        <button class="clear-all">Clear all</button>
+        <button class="flash-light">Flash All of the Lights</button>
+        <form action="GET">
+          <fieldset>
+            <legend>Pick your colour</legend>
 
-      <form action="GET">
-        <fieldset>
-          <legend>Pick your colour</legend>
+            <label for="yellow">Yellow</label>
+            <input type="radio" id="yellow" name="color" value="yellow">
 
-          <label for="yellow">Yellow</label>
-          <input type="radio" id="yellow" name="color" value="yellow">
-
-          <label for="red">Red</label>
-          <input type="radio" id="red" name="color" value="red">
+            <label for="red">Red</label>
+            <input type="radio" id="red" name="color" value="red">
           
-          <label for="orange">Orange</label>
-          <input type="radio" id="orange" name="color" value="orange">
+            <label for="orange">Orange</label>
+            <input type="radio" id="orange" name="color" value="orange">
 
-          <label for="pink">Pink</label>
-          <input type="radio" id="pink" name="color" value="pink">
+            <label for="pink">Pink</label>
+            <input type="radio" id="pink" name="color" value="pink">
 
-          <label for="purple">Purple</label>
-          <input type="radio" id="purple" name="color" value="purple">
+            <label for="purple">Purple</label>
+            <input type="radio" id="purple" name="color" value="purple">
 
-          <label for="blue">Blue</label>
-          <input type="radio" id="blue" name="color" value="blue">
+            <label for="blue">Blue</label>
+            <input type="radio" id="blue" name="color" value="blue">
 
-          <label for="green">Green</label>
-          <input type="radio" id="green" name="color" value="green">
+            <label for="green">Green</label>
+            <input type="radio" id="green" name="color" value="green">
           
-          <label for="white">White</label>
-          <input type="radio" id="white" name="color" value="white">
-        </fieldset>
-      </form>
+            <label for="white">White</label>
+            <input type="radio" id="white" name="color" value="white">
+          </fieldset>
+        </form>
       </div>
     </section>
-    <section>
+    <section class=main-grid>
       <div class="flex-container-desktop">
         <div class="flex-row">
           <a href="" class="light-container desktop"></a>
@@ -446,9 +445,10 @@
         </div>
       </div>
     </section>
-  
   </main>
+  <footer id="share" class="wrapper"></footer>
   <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+  <script src="jssocials.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
