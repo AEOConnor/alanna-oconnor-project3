@@ -175,24 +175,6 @@ html {
     -ms-flex-preferred-size: 1 1 auto;
     flex-basis: 1 1 auto; }
 
-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto; }
-  main .aside {
-    width: calc(25% - 100px);
-    margin: 0 50px; }
-  main .main-grid {
-    width: calc(75% - 100px);
-    margin: 0 50px; }
-
 .light-container {
   border-radius: 50%;
   margin: 5px;
@@ -202,6 +184,9 @@ main {
 
 h1 {
   text-shadow: 0 0 25px white; }
+
+#purple {
+  background: #333; }
 
 .mobile {
   width: 30px;
@@ -225,9 +210,9 @@ h1 {
   box-shadow: 0 0 40px 1px red; }
 
 .orange {
-  background: darkorange;
-  -webkit-box-shadow: 0 0 45px 1px darkorange;
-  box-shadow: 0 0 45px 1px darkorange; }
+  background: #ff8300;
+  -webkit-box-shadow: 0 0 50px 1px #ff8300;
+  box-shadow: 0 0 50px 1px #ff8300; }
 
 .pink {
   background: deeppink;
