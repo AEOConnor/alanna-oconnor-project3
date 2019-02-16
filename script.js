@@ -22,7 +22,7 @@ let colorChoice;
       } 
     }) 
     $(this).toggleClass(`${colorChoice}`);
-    
+    $(this).removeClass('animated pulse infinite');
   }); 
         
 // when the user clicks the clear all button, remove the color class
@@ -32,16 +32,16 @@ let colorChoice;
         $('a').removeClass(value);
       }
     }) 
+    $('a').removeClass('animated pulse infinite');
+    $('form').find('input').prop('checked', false);
   });
 
   //when the user clicks the flashing lights button, and if the a tag has a class of color, toggle the flash animation.
   $('.flash-light').on('click',function(){
       color.forEach((value) => {
         if (value === colorChoice || value !== colorChoice) {
-          $(`a.${value}`).toggleClass('animated flash infinite');
-        } else if ($(`a.${value}`) === false ){
-        $('a').removeClass('animted flash infinite');
-      }
+          $(`a.${value}`).toggleClass('animated pulse infinite');
+        } 
     }) 
   });
       

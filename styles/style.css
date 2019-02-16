@@ -137,21 +137,88 @@ body {
 
 html {
   font-size: 125%;
-  color: white; }
+  color: white;
+  font-family: "Indie Flower", cursive;
+  line-height: 1.6; }
 
 h1,
 a,
-p {
+p,
+button,
+form,
+fieldset {
   padding: 0;
   margin: 0; }
 
 label:hover {
   cursor: pointer; }
 
+input[type="radio"] {
+  opacity: 0;
+  position: absolute; }
+
 .wrapper {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto; }
+
+.fab {
+  color: white;
+  font-size: 1.2rem; }
+
+h1 {
+  text-shadow: 0 0 5px blue, 0 0 5px hotpink;
+  color: hotpink;
+  font-family: "Sacramento", cursive;
+  font-size: 4rem;
+  font-style: italic;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 10px 0;
+  padding: 20px 0; }
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+  main .grid-options {
+    width: calc(25% - 50px);
+    margin-right: 50px;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center; }
+  main .main-grid {
+    width: calc(75% - 50px);
+    margin-left: 50px;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto; }
+
+.grid-options {
+  border-right: 1px solid hotpink;
+  border-bottom: 1px solid hotpink;
+  padding: 0 20px 10px 0;
+  color: antiquewhite; }
+  .grid-options legend {
+    color: hotpink;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0 auto; }
+
+button {
+  background: black;
+  color: antiquewhite;
+  border: 1px solid transparent;
+  padding: 5px 10px;
+  margin: 10px 0; }
+  button:hover {
+    -webkit-box-shadow: inset 0 0 0 4px #333;
+    box-shadow: inset 0 0 0 4px #333; }
 
 .flex-container-desktop {
   display: -webkit-box;
@@ -173,9 +240,6 @@ label:hover {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row; }
-  .flex-row a {
-    -ms-flex-preferred-size: 1 1 auto;
-    flex-basis: 1 1 auto; }
 
 .light-container {
   border-radius: 50%;
@@ -184,33 +248,107 @@ label:hover {
   display: block;
   background: #333; }
 
-h1 {
-  text-shadow: 0 0 5px blue, 0 0  5px hotpink;
-  padding: 20px;
-  color: hotpink;
-  font-family: "Sacramento", cursive;
-  font-size: 4rem;
-  -webkit-box-shadow: inset 0px 0px 4px 4px hotpink, inset 0 0 5px 5px blue;
-  box-shadow: inset 0px 0px 4px 4px hotpink, inset 0 0 5px 5px blue;
-  font-style: italic;
-  text-align: center;
-  letter-spacing: 3px;
-  margin: 20px 0; }
-
-.mobile {
-  width: 30px;
-  height: 30px; }
-
 .desktop {
   width: 25px;
   height: 25px; }
 
 .mobile {
+  width: 35px;
+  height: 35px; }
+
+.mobile {
   display: none; }
 
-.fab {
+fieldset {
+  border: none; }
+
+.fieldset-flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.grid-options-extras {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+label {
+  font-size: 1.4rem;
+  letter-spacing: 4px;
+  padding: 5px 0;
+  margin: 5px; }
+
+input:hover + label[for="yellow"],
+input:active + label[for="yellow"],
+input:focus + label[for="yellow"],
+input[type="radio"]:checked + label[for="yellow"] {
+  color: yellow;
+  text-shadow: 0 0 6px yellow; }
+
+input:hover + label[for="red"],
+input:active + label[for="red"],
+input:focus + label[for="red"],
+input[type="radio"]:checked + label[for="red"] {
+  color: red;
+  text-shadow: 0 0 6px red; }
+
+input:hover + label[for="orange"],
+input:active + label[for="orange"],
+input:focus + label[for="orange"],
+input[type="radio"]:checked + label[for="orange"] {
+  color: #ff8300;
+  text-shadow: 0 0 6px #ff8300; }
+
+input:hover + label[for="pink"],
+input:active + label[for="pink"],
+input:focus + label[for="pink"],
+input[type="radio"]:checked + label[for="pink"] {
+  color: deeppink;
+  text-shadow: 0 0 6px deeppink; }
+
+input:hover + label[for="purple"],
+input:active + label[for="purple"],
+input:focus + label[for="purple"],
+input[type="radio"]:checked + label[for="purple"] {
+  color: mediumorchid;
+  text-shadow: 0 0 6px mediumorchid; }
+
+input:hover + label[for="blue"],
+input:active + label[for="blue"],
+input:focus + label[for="blue"],
+input[type="radio"]:checked + label[for="blue"] {
+  color: deepskyblue;
+  text-shadow: 0 0 6px deepskyblue; }
+
+input:hover + label[for="green"],
+input:active + label[for="green"],
+input:focus + label[for="green"],
+input[type="radio"]:checked + label[for="green"] {
+  color: lawngreen;
+  text-shadow: 0 0 6px lawngreen; }
+
+input:hover + label[for="white"],
+input:active + label[for="white"],
+input:focus + label[for="white"],
+input[type="radio"]:checked + label[for="white"] {
   color: white;
-  font-size: 1.2rem; }
+  text-shadow: 0 0 6px white; }
 
 .yellow {
   background: yellow;
@@ -251,6 +389,23 @@ h1 {
   background: white;
   -webkit-box-shadow: 0 0 40px 1px white;
   box-shadow: 0 0 40px 1px white; }
+
+footer p {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  color: #333; }
+
+@media (max-width: 1150px) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  footer {
+    text-align: center; } }
 
 @media (max-width: 500px) {
   .grid-desktop,

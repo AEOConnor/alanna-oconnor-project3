@@ -2,14 +2,35 @@ body {
   background: black;
 }
 
+//fonts
+$headerFont: "Sacramento", cursive;
+$bodyFont: "Indie Flower", cursive;
+
+//colors
+$yellow: yellow;
+$red: red;
+$orange: #ff8300;
+$pink: deeppink;
+$purple: mediumorchid;
+$blue: deepskyblue;
+$green: lawngreen;
+$white: white;
+$grey: #333;
+
 html {
   font-size: 125%;
   color: white;
+  font-family: $bodyFont;
+  line-height: 1.6;
 }
 
 h1,
 a,
-p {
+p,
+button,
+form,
+fieldset
+ {
   padding: 0;
   margin: 0;
 }
@@ -18,9 +39,10 @@ label:hover {
   cursor: pointer;
 }
 
-// input[type="radio"] {
-//   opacity: 
-// }
+input[type="radio"] {
+  opacity: 0;
+  position: absolute;
+}
 
 .wrapper {
   max-width: 1200px;
@@ -28,17 +50,9 @@ label:hover {
   margin: 0 auto;
 }
 
-.flex-container-desktop {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.flex-row {
-  display: flex;
-  flex-direction: row;
-    a {
-      flex-basis: 1 1 auto;
-    }
+//twitter icon
+.fab {
+  color: $white;
+  font-size: 1.2rem;
 }
 

@@ -1,0 +1,88 @@
+fieldset {
+  border: none;
+}
+
+.fieldset-flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.grid-options-extras {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+label {
+  font-size: 1.4rem;
+  letter-spacing: 4px;
+  padding: 5px 0;
+  margin: 5px;
+}
+
+input:hover + label[for="yellow"],
+input:active + label[for="yellow"],
+input:focus + label[for="yellow"],
+input[type="radio"]:checked + label[for="yellow"] {
+  color: $yellow;
+  text-shadow: 0 0 6px $yellow;
+}
+
+input:hover + label[for="red"],
+input:active + label[for="red"],
+input:focus + label[for="red"],
+input[type="radio"]:checked + label[for="red"] {
+  color: $red;
+  text-shadow: 0 0 6px $red;
+}
+
+input:hover + label[for="orange"],
+input:active + label[for="orange"],
+input:focus + label[for="orange"],
+input[type="radio"]:checked + label[for="orange"] {
+  color: $orange;
+  text-shadow: 0 0 6px $orange;
+}
+
+input:hover + label[for="pink"],
+input:active + label[for="pink"],
+input:focus + label[for="pink"],
+input[type="radio"]:checked + label[for="pink"] {
+  color: $pink;
+  text-shadow: 0 0 6px $pink;
+}
+
+input:hover + label[for="purple"],
+input:active + label[for="purple"],
+input:focus + label[for="purple"],
+input[type="radio"]:checked + label[for="purple"] {
+  color: $purple;
+  text-shadow: 0 0 6px $purple;
+}
+
+input:hover + label[for="blue"],
+input:active + label[for="blue"],
+input:focus + label[for="blue"],
+input[type="radio"]:checked + label[for="blue"] {
+  color: $blue;
+  text-shadow: 0 0 6px $blue;
+}
+
+input:hover + label[for="green"],
+input:active + label[for="green"],
+input:focus + label[for="green"],
+input[type="radio"]:checked + label[for="green"] {
+  color: $green;
+  text-shadow: 0 0 6px $green;
+}
+
+input:hover + label[for="white"],
+input:active + label[for="white"],
+input:focus + label[for="white"],
+input[type="radio"]:checked + label[for="white"] {
+  color: $white;
+  text-shadow: 0 0 6px $white;
+}

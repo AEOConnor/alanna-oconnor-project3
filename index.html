@@ -24,51 +24,53 @@
   <meta name="msapplication-square150x150logo" content="assets/medium-tile.png" />
   <meta name="msapplication-wide310x150logo" content="assets/wide-tile.png" />
   <meta name="msapplication-square310x310logo" content="assets/large-tile.png" />
-  <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Sacramento|Indie+Flower" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
   <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
+<body class="animated lightSpeedIn">
   <header class="wrapper">
     <h1>Light Up Your Life</h1>
   </header>
-  <main>
-    <section class="aside">
-      <div class="wrapper">
-        <button class="flash-light">Flashing Lights</button>
-        <button class="clear-all">Clear All</button>
+  <main class="wrapper">
+    <section class="grid-options">
         <form action="GET">
           <fieldset>
             <legend>Pick your colour</legend>
+            <div class="fieldset-flex-container">
+              <input type="radio" id="yellow" name="color" value="yellow">
+              <label for="yellow">Yellow</label>
 
-            <label for="yellow">Yellow</label>
-            <input type="radio" id="yellow" name="color" value="yellow">
-
-            <label for="red">Red</label>
-            <input type="radio" id="red" name="color" value="red">
+              <input type="radio" id="red" name="color" value="red">
+              <label for="red">Red</label>
           
-            <label for="orange">Orange</label>
-            <input type="radio" id="orange" name="color" value="orange">
+              <input type="radio" id="orange" name="color" value="orange">
+              <label for="orange">Orange</label>
 
-            <label for="pink">Pink</label>
-            <input type="radio" id="pink" name="color" value="pink">
+              <input type="radio" id="pink" name="color" value="pink">
+              <label for="pink">Pink</label>
 
-            <label for="purple">Purple</label>
-            <input type="radio" id="purple" name="color" value="purple">
+              <input type="radio" id="purple" name="color" value="purple">
+              <label for="purple">Purple</label>
 
-            <label for="blue">Blue</label>
-            <input type="radio" id="blue" name="color" value="blue">
+              <input type="radio" id="blue" name="color" value="blue">
+              <label for="blue">Blue</label>
 
-            <label for="green">Green</label>
-            <input type="radio" id="green" name="color" value="green">
-          
-            <label for="white">White</label>
-            <input type="radio" id="white" name="color" value="white">
+              <input type="radio" id="green" name="color" value="green">
+              <label for="green">Green</label>
+
+              <input type="radio" id="white" name="color" value="white">
+              <label for="white">White</label>
+            </div>  
           </fieldset>
         </form>
-      </div>
+        <div class="grid-options-extras">
+        <button class="flash-light">Flashing Lights</button>
+        <button class="clear-all">Clear All</button>
+      </div> 
+      <div id="share" class="wrapper"><span><i class="fab fa-twitter"></i></span> Share your design on Twitter!</div>
     </section>
     <section class=main-grid>
       <div class="flex-container-desktop">
@@ -415,35 +417,10 @@
           <a href="" class="light-container desktop"></a>
           <a href="" class="light-container desktop"></a>
         </div>
-        <div class="flex-row">
-          <a href="" class="light-container desktop"></a>
-          <a href="" class="light-container desktop"></a>
-          <a href="" class="light-container desktop"></a>
-          <a href="" class="light-container desktop"></a>
-          <a href="" class="light-container desktop"></a>
-          <a href="" class="light-container desktop"></a>
-          <a href="" class="light-container desktop"></a>
-          <a href="" class="light-container desktop"></a>
-          <a href="" class="light-container desktop"></a>
-          <a href="" class="light-container desktop"></a>
-          <a href="" class="light-container desktop"></a>
-          <a href="" class="light-container desktop"></a>
-          <a href="" class="light-container desktop"></a>
-          <a href="" class="light-container desktop"></a>
-          <a href="" class="light-container desktop"></a>
-          <a href="" class="light-container desktop"></a>
-          <a href="" class="light-container desktop"></a>
-          <a href="" class="light-container desktop"></a>
-          <a href="" class="light-container desktop"></a>
-          <a href="" class="light-container desktop"></a>
-          <a href="" class="light-container desktop"></a>
-          <a href="" class="light-container desktop"></a>
-          <a href="" class="light-container desktop"></a>
-        </div>
       </div>
     </section>
   </main>
-  <footer id="share" class="wrapper"><span><i class="fab fa-twitter"></i></span> Share your design on Twitter!</footer>
+  <footer class="wrapper"><p>&copy; Alanna O'Connor 2019</p></footer>
   <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
   <script src="jssocials.min.js"></script>
   <script src="script.js"></script>
