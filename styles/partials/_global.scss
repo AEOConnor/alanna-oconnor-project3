@@ -1,5 +1,7 @@
 body {
   background: black;
+  height: 100%;
+  width: 100%;
 }
 
 //fonts
@@ -29,7 +31,8 @@ a,
 p,
 button,
 form,
-fieldset
+fieldset,
+ul
  {
   padding: 0;
   margin: 0;
@@ -50,9 +53,42 @@ input[type="radio"] {
   margin: 0 auto;
 }
 
-//twitter icon
-.fab {
-  color: $white;
-  font-size: 1.2rem;
+//styles for the responsive light containers (anchor elements)
+
+.desktop {
+  width: 25px;
+  height: 25px;
+}
+
+.mobile {
+  width: 30px;
+  height: 30px;
+  display: none;
+}
+
+.flex-container-mobile {
+  display: none;
+}
+//social media styles
+
+
+.social-link {
+  color: antiquewhite;
+  text-decoration: none;
+  transition: 0.2s all ease-in;
+    .fab {
+      color: antiquewhite;
+      font-size: 1.2rem;
+      transition: .3s all ease-in;
+    }
+    &:hover {
+      color: hotpink;
+      text-shadow: 0 0 1px hotpink;
+    }
+}
+
+.social-link:hover > .fab {
+  color: hotpink;
+  text-shadow: 0 0 1px hotpink;
 }
 

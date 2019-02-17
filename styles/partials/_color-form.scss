@@ -13,7 +13,8 @@ fieldset {
 .grid-options-extras {
   display: flex;
   flex-direction: row;
-  
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 label {
@@ -21,6 +22,7 @@ label {
   letter-spacing: 4px;
   padding: 5px 0;
   margin: 5px;
+  transition: 0.2s all ease-in;
 }
 
 input:hover + label[for="yellow"],
