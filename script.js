@@ -25,15 +25,15 @@ $(function () {
       } 
     }) 
     $(this).toggleClass(`${colorChoice}`);
-    $(this).removeClass('animated pulse faster infinite');
+    $(this).removeClass('animated flash infinite');
   }); 
         
   //on click, toggle the flash animation to all existing anchor tags with color value/colorchoice.
   $('.flash-light').on('click',function(){
       color.forEach((value) => {
         if (value === colorChoice || value !== colorChoice) {
-          $(`a.${value}`).toggleClass('animated pulse faster infinite');
-          $(`a.${colorChoice}`).toggleClass('animated pusle faster infinite');
+          $(`a.${value}`).toggleClass('animated flash infinite');
+          $(`a.${colorChoice}`).toggleClass('animated flash infinite');
         } 
       }) 
   });
@@ -45,7 +45,7 @@ $(function () {
         $('a').removeClass(value);
       }
     }) 
-    $('a').removeClass('animated pulse faster infinite');
+    $('a').removeClass('animated flash infinite');
     $('form').find('input').prop('checked', false);
     colorChoice = false;
   });
