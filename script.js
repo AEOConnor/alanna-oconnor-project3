@@ -26,6 +26,7 @@ $(function () {
     }) 
     $(this).toggleClass(`${colorChoice}`);
     $(this).removeClass('animated flash infinite');
+    $('a.light-container').removeClass('animated flash infinite');
   }); 
         
   //on click, toggle the flash animation to all existing anchor tags with color value/colorchoice.
