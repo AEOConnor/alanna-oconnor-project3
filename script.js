@@ -1,19 +1,23 @@
+//array to store key color items to match with user color choice and css class names
 color = ['yellow', 'red', 'orange', 'pink', 'purple', 'blue', 'green', 'white'];
 
+//document ready
 $(function () {
 
-let colorChoice;
-  //on user click, prevent the default function 
-  $('a.light-container').on('click', function (event) {
+  //global variable for user color choice
+  let colorChoice;
+
+  //on click, prevent the default function 
+  $('a.light-container').on('click', function(event) {
     event.preventDefault();
   }); 
 
-  
+  //on click, save the user's color choice in the colorChoice variable
   $('input').on('click', function() {
-    //save the user's color choice in a variable to be used again
     colorChoice = $('input:checked').val();        
   });
 
+  //on click, check if the light-container has a color value, if it does remove it. Then, toggle color choice and, if the clicked item has the flash animation, remove it.
   $('a.light-container').on('click', function(){
     color.forEach((value) => {
       if(value !== colorChoice){
@@ -24,8 +28,18 @@ let colorChoice;
     $(this).removeClass('animated pulse faster infinite');
   }); 
         
-// when the user clicks the clear all button, remove the color class
-  $('.clear-all').on('click', function(){
+  //on click, toggle the flash animation to all existing anchor tags with color value/colorchoice.
+  $('.flash-light').on('click',function(){
+      color.forEach((value) => {
+        if (value === colorChoice || value !== colorChoice) {
+          $(`a.${value}`).toggleClass('animated pulse faster infinite');
+          $(`a.${colorChoice}`).toggleClass('animated pusle faster infinite');
+        } 
+      }) 
+  });
+
+  // on click, remove all animation, color values, and checked attribute on input 
+   $('.clear-all').on('click', function(){
     color.forEach((value) => {
       if (value === colorChoice || value !== colorChoice) {
         $('a').removeClass(value);
@@ -34,15 +48,5 @@ let colorChoice;
     $('a').removeClass('animated pulse faster infinite');
     $('form').find('input').prop('checked', false);
     colorChoice = false;
-  });
-
-  //when the user clicks the flashing lights button, and if the a tag has a class of color, toggle the flash animation.
-  $('.flash-light').on('click',function(){
-      color.forEach((value) => {
-        if (value === colorChoice || value !== colorChoice) {
-          $(`a.${value}`).toggleClass('animated pulse faster infinite');
-          $(`a.${colorChoice}`).toggleClass('animated pusle faster infinite');
-        } 
-      }) 
   });
 });

@@ -1,0 +1,77 @@
+// grid-options styles for fieldset and grid options extras
+
+//color form styles stored in partials/color-form
+
+.grid-options {
+  border-right: 1px solid hotpink;
+  border-bottom: 1px solid hotpink;
+  padding: 0 20px 10px 0;
+  color: antiquewhite;
+    legend {
+      color: hotpink;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin: 0 auto;
+    }
+}
+
+.fieldset-flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.grid-options-extras {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button {
+  background: transparent;
+  color: antiquewhite;
+  border: 1px solid transparent;
+  padding: 5px 10px;
+  margin: 10px 2px;
+  transition: 0.2s all ease-in;
+    &:hover {
+      color: hotpink;
+      text-shadow: 0 0 1px hotpink;
+      border: 1px solid hotpink;
+    }
+}
+
+button:focus,
+button:active,
+ {
+  border: 1px solid hotpink;
+}
+
+//social media styles
+ul {
+  list-style-type: none;
+    li {
+      display: inline-block;
+    }
+}
+
+.social-link {
+  color: antiquewhite;
+  text-decoration: none;
+  transition: 0.2s all ease-in;
+    .fab {
+      color: antiquewhite;
+      font-size: 1.2rem;
+      transition: .3s all ease-in;
+      margin: 5px 10px;
+      padding: 5px;
+    }
+}
+
+.social-link:hover > .fab {
+  color: hotpink;
+  text-shadow: 0 0 1px hotpink;
+}

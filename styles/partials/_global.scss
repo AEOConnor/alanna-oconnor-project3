@@ -1,7 +1,8 @@
+
+//hero pattern from heropatterns.com, made by Steve Schoger//
 body {
-  background: black;
-  height: 100%;
-  width: 100%;
+background-color: #000000;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239C92AC' fill-opacity='0.2' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
 
 //fonts
@@ -26,6 +27,19 @@ html {
   line-height: 1.6;
 }
 
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
 h1,
 a,
 p,
@@ -38,57 +52,10 @@ ul
   margin: 0;
 }
 
-label:hover {
-  cursor: pointer;
-}
-
-input[type="radio"] {
-  opacity: 0;
-  position: absolute;
-}
-
 .wrapper {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
 }
 
-//styles for the responsive light containers (anchor elements)
-
-.desktop {
-  width: 25px;
-  height: 25px;
-}
-
-.mobile {
-  width: 30px;
-  height: 30px;
-  display: none;
-}
-
-.flex-container-mobile {
-  display: none;
-}
-//social media styles
-
-
-.social-link {
-  color: antiquewhite;
-  text-decoration: none;
-  transition: 0.2s all ease-in;
-    .fab {
-      color: antiquewhite;
-      font-size: 1.2rem;
-      transition: .3s all ease-in;
-    }
-    &:hover {
-      color: hotpink;
-      text-shadow: 0 0 1px hotpink;
-    }
-}
-
-.social-link:hover > .fab {
-  color: hotpink;
-  text-shadow: 0 0 1px hotpink;
-}
 

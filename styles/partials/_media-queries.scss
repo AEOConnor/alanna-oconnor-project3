@@ -1,4 +1,11 @@
 @media (max-width: 1150px) {
+  
+  h1 {
+    font-size: 3.2rem;
+    margin: 0;
+    padding: 0;
+  }
+  
   main {
     flex-direction: column;
     align-items: center;
@@ -6,7 +13,7 @@
         width: 100%;
         margin: 0;
         padding: 0;
-        
+        border: none;
       }
   }
 
@@ -21,9 +28,14 @@
     padding: 1px 5px;
   }
 
+  label {
+    font-size: 1.2rem;
+  }
+
   button,
-  ul {
-    margin: 10px 5px;
+  ul,
+  .fab {
+    margin: 5px 20px;
   }
 
   footer {
@@ -33,18 +45,39 @@
 
 //media query to create smaller grid
 @media (max-width: 810px) {
+
   .remove {
     display: none;
+  }
+
+  label {
+    font-size: 1rem;
   }
 }
 
 //media query for mobile grid
 @media (max-width: 700px) {
+
+  h1 {
+    font-size: 2.6rem;
+  }
+
+  label {
+    margin: 0;
+  }
+
   .desktop, 
   .flex-container {
     display: none;
   }
 
+  //grid options - fieldset
+  .fieldset-flex-container {
+    width: 64%;
+    margin: 0 auto;
+  }
+
+  //mobile grid
   .flex-container-mobile {
     display: flex;
     flex-direction: column;
@@ -52,18 +85,39 @@
     width: 100%;
   }
 
+  //mobile light containers
   .mobile {
     display: block;
   }
 }
 
 @media (max-width: 520px) {
+
   .remove-mobile {
     display: none;
   }   
+
+  .fieldset-flex-container {
+    width: 78%;
+  }
 }
 
 @media (max-width: 450px) {
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  footer {
+    display: none;
+  }
+
+  button,
+  ul,
+  .fab {
+    margin: 0 5px;
+  }
+
   .mobile {
     width: 40px;
     height: 40px;
@@ -71,7 +125,22 @@
 }
 
 @media (max-width: 400px) {
+
+  h1 {
+    font-size: 1.4rem;
+    letter-spacing: 5px;
+  }
+
+  .light-container {
+    padding: 3px;
+    margin: 3px;
+  }
+
   .remove-mobile-xs {
     display: none;
   } 
+
+ .fieldset-flex-container {
+    width: 100%;
+  }
 }
