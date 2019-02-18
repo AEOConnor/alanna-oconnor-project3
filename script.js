@@ -18,7 +18,7 @@ $(function () {
   });
 
   //on click, check if the light-container has a color value, if it does remove it. Then, toggle color choice and, if the clicked item has the flash animation, remove it.
-  $('a.light-container').on('click', function(){
+  $('a.light-container').on('click', function() {
     color.forEach((value) => {
       if(value !== colorChoice){
         $(this).removeClass(value);
@@ -31,16 +31,16 @@ $(function () {
         
   //on click, toggle the flash animation to all existing anchor tags with color value/colorchoice.
   $('.flash-light').on('click',function(){
-      color.forEach((value) => {
-        if (value === colorChoice || value !== colorChoice) {
-          $(`a.${value}`).toggleClass('animated flash infinite');
-          $(`a.${colorChoice}`).toggleClass('animated flash infinite');
-        } 
-      }) 
+    color.forEach((value) => {
+      if (value === colorChoice || value !== colorChoice) {
+        $(`a.${value}`).toggleClass('animated flash infinite');
+        $(`a.${colorChoice}`).toggleClass('animated flash infinite');
+      } 
+    }) 
   });
 
   // on click, remove all animation, color values, and checked attribute on input 
-   $('.clear-all').on('click', function(){
+  $('.clear-all').on('click', function(){
     color.forEach((value) => {
       if (value === colorChoice || value !== colorChoice) {
         $('a').removeClass(value);
@@ -49,5 +49,13 @@ $(function () {
     $('a').removeClass('animated flash infinite');
     $('form').find('input').prop('checked', false);
     colorChoice = false;
+  });
+
+  $(window).on('resize', function () {
+    let viewportWidth = $(window).width();
+    if (viewportWidth < 810){
+      $('a.light-container').removeClass('yellow red orange pink purple blue green white');
+      $('a.light-container').removeClass('animated flash infinite');
+    }
   });
 });
