@@ -45,8 +45,7 @@ button {
 }
 
 button:focus,
-button:active,
- {
+button:active {
   border: 1px solid hotpink;
 }
 
@@ -71,7 +70,7 @@ ul {
     }
 }
 
-.social-link:hover > .fab {
+.social-link:hover {
   color: hotpink;
   text-shadow: 0 0 1px hotpink;
 }

@@ -1,4 +1,3 @@
-
 //hero pattern from heropatterns.com, made by Steve Schoger//
 body {
 background-color: #000000;
@@ -6,8 +5,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 //fonts
-$headerFont: "Sacramento", cursive;
-$bodyFont: "Indie Flower", cursive;
+$header-font: "Sacramento", cursive;
+$body-font: "Indie Flower", cursive;
 
 //colors
 $yellow: yellow;
@@ -22,8 +21,8 @@ $grey: #333;
 
 html {
   font-size: 125%;
-  color: white;
-  font-family: $bodyFont;
+  color: $white;
+  font-family: $body-font;
   line-height: 1.6;
 }
 
@@ -32,7 +31,7 @@ html {
   left: -1000px;
   top: 5px;
   z-index: 999;
-  background: white;
+  background: $white;
   color: black;
 }
 
@@ -46,8 +45,7 @@ p,
 button,
 form,
 fieldset,
-ul
- {
+ul {
   padding: 0;
   margin: 0;
 }

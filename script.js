@@ -50,12 +50,4 @@ $(function () {
     $('form').find('input').prop('checked', false);
     colorChoice = false;
   });
-
-  $(window).on('resize', function () {
-    let viewportWidth = $(window).width();
-    if (viewportWidth < 810){
-      $('a.light-container').removeClass('yellow red orange pink purple blue green white');
-      $('a.light-container').removeClass('animated flash infinite');
-    }
-  });
 });
