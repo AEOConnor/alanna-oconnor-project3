@@ -1,6 +1,6 @@
 h1 {
-  text-shadow: 0 0 5px blue, 0 0 5px hotpink;
-  color: hotpink;
+  text-shadow: 0 0 5px blue, 0 0 5px $hotPink;
+  color: $hotPink;
   font-family: $header-font;
   font-size: 4rem;
   font-style: italic;

@@ -247,7 +247,7 @@ main {
   border-right: 1px solid hotpink;
   border-bottom: 1px solid hotpink;
   padding: 0 20px 10px 0;
-  color: antiquewhite; }
+  color: antiqueWhite; }
   .grid-options legend {
     color: hotpink;
     text-transform: uppercase;
@@ -266,10 +266,7 @@ main {
   flex-wrap: wrap;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: center; }
 
 .grid-options-extras {
   display: -webkit-box;
@@ -287,7 +284,7 @@ main {
 
 button {
   background: transparent;
-  color: antiquewhite;
+  color: antiqueWhite;
   border: 1px solid transparent;
   padding: 5px 10px;
   margin: 10px 2px;
@@ -309,13 +306,13 @@ ul {
     display: inline-block; }
 
 .social-link {
-  color: antiquewhite;
+  color: antiqueWhite;
   text-decoration: none;
   -webkit-transition: 0.2s all ease-in;
   -o-transition: 0.2s all ease-in;
   transition: 0.2s all ease-in; }
   .social-link .fab {
-    color: antiquewhite;
+    color: antiqueWhite;
     font-size: 1.2rem;
     -webkit-transition: .3s all ease-in;
     -o-transition: .3s all ease-in;
@@ -323,7 +320,7 @@ ul {
     margin: 5px 10px;
     padding: 5px; }
 
-.social-link:hover > .fab {
+.social-link .fab:hover {
   color: hotpink;
   text-shadow: 0 0 1px hotpink; }
 

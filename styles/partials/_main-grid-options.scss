@@ -3,12 +3,12 @@
 //color form styles stored in partials/color-form
 
 .grid-options {
-  border-right: 1px solid hotpink;
-  border-bottom: 1px solid hotpink;
+  border-right: 1px solid $hotPink;
+  border-bottom: 1px solid $hotPink;
   padding: 0 20px 10px 0;
-  color: antiquewhite;
+  color: $antiqueWhite;
     legend {
-      color: hotpink;
+      color: $hotPink;
       text-transform: uppercase;
       letter-spacing: 3px;
       margin: 0 auto;
@@ -20,7 +20,6 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  justify-content: space-between;
 }
 
 .grid-options-extras {
@@ -32,21 +31,21 @@
 
 button {
   background: transparent;
-  color: antiquewhite;
+  color: $antiqueWhite;
   border: 1px solid transparent;
   padding: 5px 10px;
   margin: 10px 2px;
   transition: 0.2s all ease-in;
     &:hover {
-      color: hotpink;
-      text-shadow: 0 0 1px hotpink;
-      border: 1px solid hotpink;
+      color: $hotPink;
+      text-shadow: 0 0 1px $hotPink;
+      border: 1px solid $hotPink;
     }
 }
 
 button:focus,
 button:active {
-  border: 1px solid hotpink;
+  border: 1px solid $hotPink;
 }
 
 //social media styles
@@ -58,19 +57,20 @@ ul {
 }
 
 .social-link {
-  color: antiquewhite;
+  color: $antiqueWhite;
   text-decoration: none;
   transition: 0.2s all ease-in;
     .fab {
-      color: antiquewhite;
+      color: $antiqueWhite;
       font-size: 1.2rem;
       transition: .3s all ease-in;
       margin: 5px 10px;
       padding: 5px;
     }
+
 }
 
-.social-link:hover {
-  color: hotpink;
-  text-shadow: 0 0 1px hotpink;
+.social-link .fab:hover {
+  color: $hotPink;
+  text-shadow: 0 0 1px $hotPink;
 }
